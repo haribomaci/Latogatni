@@ -1,0 +1,33 @@
+<!--
+File: app.component.html
+Author: Tóth Júlia
+Copyright: 2023,Tóth Júlia
+Group: Szoft 2 N
+Date: 2023-01-02
+Github: https://github.com/haribomaci/
+Licenc: GNU GPL
+-->
+
+<div class="container">
+    <h2 class="text-center">Adatok</h2>
+    <table class="table table-striped">
+        <thead>
+            <tr>
+                <th class="name text-center">Név</th>
+                <th class="county text-center">Megye</th>
+                <th class="area text-center">Terület (km2)</th>
+                <th class="population text-center">Népesség (fő)</th>
+            </tr>
+        </thead>
+        <tbody>
+            <tr *ngFor="let adat of adatok">
+                <td class="name text-center">{{adat.name}}</td>
+                <td class="county text-center">{{adat.county}}</td>
+                <td class="area text-center">{{adat.area}}</td>    
+                <td class="county text-center">{{adat.population}}</td>    
+            </tr>
+        </tbody>
+    </table>
+</div>
+
+
